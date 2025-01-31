@@ -46,18 +46,27 @@ ul
 {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
-li a 
-{
+/* Styling the LI items (buttons) */
+li {
+    margin: 10px 0; /* Adds space between list items */
+}
+
+
+/* Styling the buttons */
+li a {
     text-decoration: none;
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
+    color: black;
+    padding: 15px 30px;
     background-color: white;
     border-radius: 5px;
     transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+    width: 200px; /* Optional: makes buttons the same width */
 }
 
 li a:hover 
