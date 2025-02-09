@@ -315,3 +315,54 @@ nav ul li a:hover {
 .home-btn:hover {
     box-shadow: 0 0 10px #ff6666;
 }
+
+
+/* Dark Mode
+
+/* Define Light & Dark Mode Colors */
+:root {
+    --background-color: black;
+    --text-color: white;
+    --accent-color: #ff6666;
+}
+
+/* Light Mode Variables */
+.light-mode {
+    --background-color: white;
+    --text-color: black;
+    --accent-color: #ff3333;
+}
+
+/* Apply Colors */
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Navigation & Buttons */
+header, .btn, .social-icons a {
+    color: var(--text-color);
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+
+/*Dark Mode end
