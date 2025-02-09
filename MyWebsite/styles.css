@@ -232,34 +232,36 @@ nav ul li a:hover {
 }
 /* End of about page*/
 
-/* Skills Section */
-#skills {
+/* Projects Section */
+#projects {
     text-align: center;
     padding: 80px 10%;
     background: #111;
     color: white;
 }
 
-#skills h2 {
+#projects h2 {
     font-size: 36px;
     color: #ff6666;
     margin-bottom: 20px;
 }
 
-#skills p {
+#projects p {
     font-size: 16px;
     margin-bottom: 40px;
     color: #ccc;
 }
 
-.skills-container {
+/* Project Grid */
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
 
-.skill {
+/* Project Card */
+.project-card {
     background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
@@ -269,49 +271,38 @@ nav ul li a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.skill:hover {
+.project-card:hover {
     transform: scale(1.05);
 }
 
-.skill i {
-    font-size: 50px;
-    color: #ff6666;
-    margin-bottom: 10px;
-}
-
-.skill h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.progress-bar {
-    background: #333;
-    height: 10px;
+/* Project Image */
+.project-card img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Project Button */
+.project-btn {
+    display: inline-block;
     margin-top: 10px;
-    position: relative;
-}
-
-.progress {
-    height: 100%;
-    background: #ff6666;
+    padding: 8px 16px;
+    background: linear-gradient(90deg, #ff6666, #ff3333);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
     border-radius: 5px;
-    width: 0; /* Initially hidden */
-    transition: width 1s ease-in-out;
+    transition: 0.3s;
 }
 
-/* Skill Progress Widths */
-.html { width: 90%; }
-.css { width: 85%; }
-.js { width: 75%; }
-.unity { width: 80%; }
-.python { width: 70%; }
+.project-btn:hover {
+    box-shadow: 0 0 10px #ff6666;
+}
 
 /* Return Home Button */
 .home-btn {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px 20px;
     background: linear-gradient(90deg, #ff6666, #ff3333);
     color: white;
