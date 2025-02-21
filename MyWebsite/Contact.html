@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How To Contact Me</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <header>
-        <h1>About Me</h1>
+        <h1 class="logo">Morgan</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,9 +22,35 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Contact Me</h2>
-        <p>Email, linkdn, github, phone? etc</p>
-    </main>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>How to Contact Me</h2>
+            <p>Feel free to reach out to me through any of the following methods:</p>
+
+            <!-- Email Section -->
+            <div class="contact-method">
+                <h3>Email</h3>
+                <p>For professional inquiries or just to say hello, you can email me at:</p>
+                <a href="mailto:morganhodge101010@gmail.com" class="contact-link">morganhodge101010@gmail.com</a>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="contact-method">
+                <h3>Social Media</h3>
+                <p>You can also reach out via my social media profiles:</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/morgan-hodge-860854256/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/Mdot5596" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://twitter.com/morgan" target="_blank" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+
+            <!-- Return Home Button -->
+            <a href="index.html" class="home-btn">Return Home</a>
+        </div>
+    </section>
+
 </body>
 </html>
