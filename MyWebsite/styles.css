@@ -155,14 +155,15 @@ nav ul li a:hover {
 /* About page */
 #about {
     display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;  /* Center vertically */
-    height: 100vh;  /* Full screen height */
-    width: 100vw;  /* Full screen width */
-    padding: 50px 0; /* Remove left/right padding */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed from height to min-height to prevent cutoff */
+    width: 100vw;
+    padding: 100px 0; /* Add space at the top to push content down */
     background: #111;
     color: white;
 }
+
 
 /* Center the About container */
 .about-container {
@@ -171,27 +172,30 @@ nav ul li a:hover {
     align-items: center; /* Center horizontally */
     text-align: center;
     width: 90%; /* Allow responsiveness */
-    max-width: 700px; /* Limit width */
+    max-width: 900px; /* Limit width */
     background: #1a1a1a;
-    padding: 40px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 
-/* Fix Image Position */
 .about-image img {
     display: block;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 0 auto 20px; /* Center it */
+    object-fit: cover; /* Ensures the image is not stretched */
+    margin: 0 auto 20px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
 
-/* Text Container */
-.about-text {
-    max-width: 500px;
+
+.about-text p {
+    line-height: 1.8;  /* Increase spacing between lines */
+    margin-bottom: 15px; /* Adds space between paragraphs */
+    text-align: left; /* Optional: Aligns text to the left for a cleaner look */
 }
+
 
 /* Make sure heading & text are centered */
 .about-text h2, .about-text p {
@@ -299,6 +303,8 @@ nav ul li a:hover {
 .project-btn:hover {
     box-shadow: 0 0 10px #ff6666;
 }
+
+
 
 /* Return Home Button */
 .home-btn {
