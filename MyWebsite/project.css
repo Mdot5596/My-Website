@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Makes sure it's always centered */
+    margin: 0;
+}
+
+/* Style for Navigation Links */
+nav a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6666;
+    text-shadow: 0 0 10px #ff6666;
+}
+
+
+/* Remove extra space from the top */
+.project-container {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 15px red;
+}
+
+/* Project Title */
+.project-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff6666;
+    text-shadow: 0 0 15px #ff6666;
+    margin-bottom: 20px;
+}
+
+/* Project Image */
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.project-btn, .home-btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff6666, #ff3333);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.project-btn:hover, .home-btn:hover {
+    box-shadow: 0 0 10px #ff6666;
+}
+/* Button Styling */
+.back-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ff4444;
+    box-shadow: 0 0 10px #ff6666;
+}
+
+
+/* Dark Mode Support */
+:root {
+    --background-color: black;
+    --text-color: white;
+    --accent-color: #ff6666;
+}
+
+.light-mode {
+    --background-color: white;
+    --text-color: black;
+    --accent-color: #ff3333;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-container {
+        padding: 20px;
+    }
+    
+    .project-title {
+        font-size: 28px;
+    }
+    
+    .project-description {
+        font-size: 14px;
+    }
+}
